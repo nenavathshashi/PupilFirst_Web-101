@@ -143,7 +143,7 @@ displayEntries();
   <center>
     <form id="user-form">
       <fieldset class="container">
-        <h3>Registration Form</h3>
+        <legend id="title">Registration Form</legend>
         <table cellspacing="5" cellpadding="5">
           <tr>
             <td><label for="name">name </label></td>
@@ -164,12 +164,21 @@ displayEntries();
             <td><input type="date" id="dob" name="DOB" required /></td>
           </tr>
           <tr>
-            <td colspan="2" align="center" >
-              <button type="submit" id="submit" color="green">Submit</button>
+            <td align="right">
+              <input type="checkbox" id="acceptTerms" name="accept" />
+            </td>
+            <td><label for="acceptTerms">accept Terms & Conditions</label></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <button type="submit" id="submit">Submit</button>
             </td>
           </tr>
         </table>
       </fieldset>
     </form>
+    <h2>User Entries</h2>
+    <div id="user-entries"></div>
   </center>
+  <script type="text/javascript" src="registration.js"></script>
 </body>
